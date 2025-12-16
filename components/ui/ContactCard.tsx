@@ -9,26 +9,32 @@ type Props = {
 };
 
 const variantClasses: Record<Variant, string> = {
-  dark: "rounded-xl border-2 bg-black text-white p-6 flex flex-col justify-between shadow-md",
-  blue: "rounded-xl bg-[#3752FF] p-6 flex flex-col justify-between shadow-md",
+  dark: "rounded-3xl bg-black text-white p-2 flex flex-col justify-between cursor-pointer",
+  blue: "rounded-3xl bg-[#3752FF] p-2 flex flex-col justify-between cursor-pointer",
   light:
-    "rounded-xl border-2 bg-white p-6 flex flex-col justify-between shadow-md",
+    "rounded-3xl border-2 bg-white p-2 flex flex-col justify-between border-black cursor-pointer",
 };
 
 export default function ContactCard({ variant = "light", icon, text }: Props) {
   return (
     <div className={variantClasses[variant]}>
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center text-white font-bold">
+      <div className="flex flex-col gap-3">
+        <div className="w-10 h-10 m-1 flex items-center justify-center text-white">
           {icon}
         </div>
-        <div className="flex-1">
-          <div className="h-0.5 bg-white/30 w-full mb-3" />
+        <div className="flex-1 pt-10">
+          <div
+            className={
+              variant === "light"
+                ? "h-0.5 bg-black w-full mb-3"
+                : "h-0.5 bg-white w-full mb-3"
+            }
+          />
           <p
             className={
               variant === "light"
-                ? "text-sm text-gray-700"
-                : "text-sm text-white/90"
+                ? "text-sm text-gray-700 text-right"
+                : "text-sm text-white/90 text-right"
             }
           >
             {text}

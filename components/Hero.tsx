@@ -20,7 +20,8 @@ const Hero = () => {
             <div className="flex flex-col">
               <ArrowDownRight
                 size={200}
-                className="block ml-auto translate-x-12 translate-y-5"
+                strokeWidth={2.5}
+                className="block ml-auto translate-x-11 translate-y-6"
               />
               {tags.map((tag) => (
                 <p key={tag} className="text-2xl font-semibold my-1 text-right">
@@ -32,11 +33,11 @@ const Hero = () => {
         </div>
 
         <div className="w-2/3 h-full p-10 relative">
-          <div className="aspect-square size-130 bg-[#50C878] rounded-2xl absolute bottom-0 left-0 mx-5"></div>
+          <div className="aspect-square size-145 bg-[#657153] rounded-2xl absolute bottom-0 left-0 mx-5" />
         </div>
       </div>
 
-      <div className="h-20 px-6 border-t border-gray-200 items-center bg-white flex justify-end mt-10">
+      <div className="h-20 px-6 border-t border-b border-gray-300 items-center bg-white flex justify-end mt-10">
         <div className="flex items-center gap-2">
           <p>See More</p>
           <Button isIconOnly variant="tertiary">
