@@ -5,7 +5,7 @@ import { Linkedin, Mail } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen flex justify-center items-center">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
         <ProfileHero
           alt="Portrait of Kizza"

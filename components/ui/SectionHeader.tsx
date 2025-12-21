@@ -7,7 +7,7 @@ type Props = {
 
 export default function SectionHeader({ title, right }: Props) {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between mb-5">
       <h2 className="text-3xl font-semibold">{title}</h2>
       {right ?? (
         <button className="w-9 h-9 rounded-full border border-gray-300 flex items-center justify-center bg-white shadow-sm">
