@@ -41,18 +41,18 @@ const Hero = () => {
         <div className="w-2/3 h-full p-10 relative">
           <div
             ref={squareRef}
-            className="aspect-square size-145 bg-[#657153] rounded-2xl absolute bottom-0 left-0 mx-5"
+            className="aspect-square size-145 bg-[#919239] rounded-2xl absolute bottom-0 left-0 mx-5"
           >
-            <DraggableText
+            {/* <DraggableText
               constraintRef={
                 squareRef as unknown as React.RefObject<HTMLElement>
               }
-            />
+            /> */}
           </div>
         </div>
       </div>
 
-      <div className="h-20 px-6 border-t border-b border-gray-300 items-center bg-white flex justify-end mt-10">
+      <div className="h-20 px-6 border-t border-b border-gray-300 items-center  flex justify-end mt-10">
         <div className="flex items-center gap-2">
           <p>See More</p>
           <Button isIconOnly variant="tertiary">

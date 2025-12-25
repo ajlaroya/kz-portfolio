@@ -5,7 +5,7 @@ import { Linkedin, Mail } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center">
+    <div className="min-h-screen flex justify-center items-center p-10">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
         <ProfileHero
           alt="Portrait of Kizza"
@@ -18,7 +18,7 @@ const About = () => {
         <div className="flex flex-col gap-6 col-span-3">
           <SectionHeader title="Introduction" />
 
-          <div className="rounded-xl border p-6 bg-white border-gray-300">
+          <div className="rounded-xl border p-6 border-gray-300">
             <div className="flex items-center gap-6">
               <div className="flex-1">
                 <h3 className="text-lg font-semibold mb-2">

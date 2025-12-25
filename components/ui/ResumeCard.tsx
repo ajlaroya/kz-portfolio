@@ -30,7 +30,7 @@ const ResumeCard: React.FC<ResumeCardProps> = ({
           className={`grow-0 rounded-full px-2 py-1 text-xs ${
             isEducation ? "bg-white text-black" : "text-white"
           }`}
-          style={isEducation ? undefined : { backgroundColor: accentColor }}
+          style={isEducation ? undefined : { backgroundColor: "#919239" }}
         >
           {date}
         </span>

@@ -40,29 +40,29 @@ const educations = [
     logo: "/kicre8z.png",
     company: "University of Design",
     position: "Bachelor of Arts in Graphic Design",
-    accentColor: "#A8F58C",
+    accentColor: "#919239",
   },
   {
     date: "2014 - 2016",
     logo: "/kicre8z.png",
     company: "Community College",
     position: "Associate Degree in Visual Arts",
-    accentColor: "#D88CFF",
+    accentColor: "#919239",
   },
   {
     date: "2012 - 2014",
     logo: "/kicre8z.png",
     company: "High School",
     position: "High School Diploma",
-    accentColor: "#8CFFD8",
+    accentColor: "#919239",
   },
 ];
 
 const Resume = () => {
   return (
     <section>
-      <div className="grid grid-cols-3 border-gray-300 min-h-[calc(100vh-60px)] lg:max-w-[1200px] mx-auto">
-        <div className="border-r border-gray-300 p-8 flex flex-col items-center justify-center">
+      <div className="grid grid-cols-3 border-gray-300 min-h-[calc(100vh-60px)] lg:max-w-[1200px] mx-auto place-items-center">
+        <div className="p-8">
           <div>
             <SectionHeader title="Experience" />
             <div className="flex flex-col gap-5 mt-10 items-center">
@@ -80,7 +80,7 @@ const Resume = () => {
           </div>
         </div>
 
-        <div className="border-r border-gray-300 p-8 flex flex-col gap-3 items-center justify-center">
+        <div className="p-8 flex flex-col gap-3 items-left">
           <div>
             <SectionHeader title="Expertise" />
             <p className=" pb-2">
@@ -122,7 +122,7 @@ const Resume = () => {
               {softskills.map((skill, index) => (
                 <span
                   key={index}
-                  className="bg-white border border-black text-black px-3 py-1 rounded-full text-sm"
+                  className=" border border-black text-black px-3 py-1 rounded-full text-sm"
                 >
                   #{skill}
                 </span>
@@ -131,7 +131,7 @@ const Resume = () => {
           </div>
         </div>
 
-        <div className="p-8 flex flex-col items-center justify-center">
+        <div className="p-8 flex flex-col items-center">
           <div>
             <SectionHeader title="Education" />
             <div className="flex flex-col gap-5 mt-10 items-center">
