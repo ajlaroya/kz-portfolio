@@ -12,7 +12,7 @@ export default function ProfileHero({
   caption,
 }: Props) {
   return (
-    <div className="relative rounded-3xl overflow-hidden bg-black h-[620px] col-span-2">
+    <div className="relative rounded-3xl overflow-hidden bg-black h-screen lg:h-[800px] col-span-2">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/kizzy.webp"
